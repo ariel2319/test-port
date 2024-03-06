@@ -30,15 +30,24 @@ a {
 }
 
 .navbar {
-  background-color: brown;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+
   height: 50px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .navbar-menu {
   display: flex;
   gap: 1rem;
+}
+
+section {
+  min-height: 100vh;
 }
