@@ -14,17 +14,80 @@
     <span> <a href="#">MALDONADO AA</a> </span>
 
     <ul class="navbar-menu">
-      <li><a href="home">Inicio</a></li>
-      <li><a href="about">Sobre Mi</a></li>
-      <li><a href="portfolio">Portfolio</a></li>
-      <li><a href="contact">Contacto</a></li>
+      <li><a href="#home" class="link">Inicio</a></li>
+      <li><a href="#about" class="link">Sobre Mi</a></li>
+      <li><a href="#portfolio" class="link">Portfolio</a></li>
+      <li><a href="#contact" class="link">Contacto</a></li>
     </ul>
   </nav>
 
-  <section id="home" style="background-color: red;"></section>
-  <section id="about" style="background-color: green;"></section>
-  <section id="portfolio" style="background-color: bluered;"></section>
-  <section id="contact" style="background-color: black;"></section>
+  <main class="container-principal">
+
+    <section id="home" class="hidden">
+      <h1 class="home-title">
+        Hola soy <span>Ariel Maldonado</span> soy <span>desarrollador WEB y QA tester</span>
+      </h1>
+    </section>
+
+    <section id="about" class="hidden">
+      <h2>
+        Quien SOY
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia vero, necessitatibus veritatis odit soluta
+        rerum, quos cum aperiam voluptatem unde explicabo dolor iusto distinctio deleniti saepe consectetur, recusandae
+        hic aut.
+        Consequuntur voluptates non obcaecati cupiditate asperiores, animi quos cumque, provident harum aperiam nemo
+        odio
+        a sit dignissimos. Perspiciatis consequuntur corrupti tempora molestiae dolore, modi facere nisi, quae,
+        quibusdam
+        omnis pariatur?
+        Possimus iste natus, ducimus sunt sapiente delectus sint sit similique neque corporis deleniti doloremque, a
+        alias
+        repudiandae cum pariatur, vitae in quam minus obcaecati culpa libero aperiam! Distinctio, atque! Est?
+        Itaque ad nesciunt quos maiores possimus. Repellendus numquam consequatur impedit debitis laudantium a unde
+        doloremque, ut maxime vero, non quos officia totam voluptates et rerum ipsum minima eveniet dolores sunt.
+        Quisquam in, corrupti aperiam, possimus numquam et eius accusamus voluptas exercitationem quam deleniti fugiat
+        assumenda accusantium, natus consequatur qui quo! Id cumque illo a ab eius cum in eos quidem.
+      </p>
+
+      <div class="about-image">
+        <img src="src/image/foto-portafolio.jpg" alt="mi">
+      </div>
+    </section>
+
+    <section id="portfolio" class="hidden">
+      <h2>
+        Portfolio
+      </h2>
+      <div class="portfolios">
+        <div class="portfolio">
+          <img src="src/portfolio 1.jpeg" alt="porta1">
+        </div>
+        <div class="portfolio">
+          <img src="src/portfolio 2.jpg" alt="porta2">
+        </div>
+        <div class="portfolio">
+          <img src="src/portfolio 3.jpg" alt="porta3">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="hidden">
+      <form class="form">
+        <h2>
+          Contáctame
+        </h2>
+        <input type="text" placeholder="Ingresa tu nombre: " name="nameUser" id="nameUser" required>
+        <input type="text" placeholder="Ingresa tu correo: " name="emailUser" id="emailUser" required>
+
+        <textarea name="commentUser" id="commentUser" cols="30" rows="10" placeholder="Escríbeme..."></textarea>
+
+        <button class="btn"> Enviar </button>
+      </form>
+    </section>
+  </main>
+  <script src="main.js"></script>
 </body>
 
 </html>
