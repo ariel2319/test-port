@@ -2,6 +2,8 @@
   --color-bg: #40679E;
   --color-font: #F6F5F5;
   --color-principal: #F99417;
+
+  --z-navbar: 100;
 }
 
 /* body.darkTheme {
@@ -46,14 +48,18 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  position: fixed;
+  height: 50px;
   background-color: var(--color-bg);
+
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
 
   height: 50px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  z-index: var(--z-navbar);
 }
 
 .navbar-menu {
@@ -62,9 +68,13 @@ a {
 }
 
 .link {
-  background-color: red;
   padding: 0.5rem;
   display: inline-block;
+  border-radius: 0.5rem;
+}
+
+.link-active {
+  background-color: var(--color-principal);
 }
 
 section {
@@ -162,10 +172,11 @@ section {
 
 .hidden {
   opacity: 0;
-
-  transition: opacity 0.5s;
+  /* transform: translateX(-100px); */
+  transition: opacity 0.5s, transform;
 }
 
 .show {
   opacity: 1;
+  /*   transform: translateX(0); */
 }
